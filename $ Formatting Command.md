@@ -2,13 +2,11 @@
 
 - **Struktur**:
 	- Das Rezept hat den Rezeptnamen als Titel, aber nicht mehr (z.B. Chili con Tofu). Der Titel soll eine Markdown-H1-Überschrift sein.
-	- Nach dem Titel kommt eine Auflistung der Eckdaten des Rezepts, ohne Überschrift:
-		- 
+	- Nach dem Titel kommt eine Auflistung der Eckdaten des Rezepts als Stichpunkte, ohne Überschrift:
+		- Ernährungseinschränkung: {omnivore, pescetarisch, vegetarisch, vegan}
+		- Personen: *Anzahl der Portionen einsetzen*
 	- Die Zutaten werden mit einer Markdown-H3-Überschrift "Zutaten" eingeleitet.
 	- Die Zubereitungsschritte werden mit einer Markdown-H3-Überschrift "Zubereitungsschritte" eingeleitet.
-- **Titel**:
-	- 
-	- 
 - **Zutaten**:
 	- Die Zutaten werden als Aufzählung dargestellt, wobei jede Zeile mit einem Bindestrich beginnt, gefolgt von Menge, Einheit und dem Namen der Zutat (z. B. „350 g Räuchertofu“).
 	- Die Zutaten werden in der Reihenfolge aufgelistet, in der sie in den Zubereitungsschritten verarbeitet werden. Falls das Originalrezept eine andere Reihenfolge vorgibt, ist diese zugunsten der klaren Ablaufbeschreibung anzupassen.

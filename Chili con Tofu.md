@@ -1,3 +1,7 @@
+
+- Ernährungseinschränkung: vegan
+- Personen: _Anzahl der Portionen_
+
 ### Zutaten
 
 - 350 g Räuchertofu
@@ -29,7 +33,7 @@
 6. Paprikas hinzufügen und 5 Minuten mit anbraten.
 7. Tomatenmark und Sambal Oelek hinzufügen und kurz mit anbraten.
 8. Gewürze (Kreuzkümmel, Oregano, Paprikapulver edelsüß, Paprikapulver geräuchert, Koriander, Zimt, Backkakao) hinzufügen und kurz mit anbraten.
-9. Gehackte Tomaten, Kidneybohnen und Mais sowie 1 L heißes Wasser hinzufügen.
+9. Gehackte Tomaten, Kidneybohnen, Mais sowie 1 L heißes Wasser hinzufügen.
 10. Alles 2 Stunden köcheln lassen und regelmäßig umrühren.
 11. Mit Salz, Pfeffer, zusätzlichem Sambal Oelek und Gewürzen abschmecken.
 12. Chili con Tofu mit Fladenbrot servieren.
