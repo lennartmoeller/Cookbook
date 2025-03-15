@@ -10,7 +10,7 @@
 - **Zutaten**:
 	- Die Zutaten werden als Aufzählung dargestellt, wobei jede Zeile mit einem Bindestrich beginnt, gefolgt von Menge, Einheit und dem Namen der Zutat (z. B. „350 g Räuchertofu“).
 	- Die Zutaten werden in der Reihenfolge aufgelistet, in der sie in den Zubereitungsschritten verarbeitet werden. Falls das Originalrezept eine andere Reihenfolge vorgibt, ist diese zugunsten der klaren Ablaufbeschreibung anzupassen.
-	- Es ist auf eine einheitliche Schreibweise der Einheiten und der Zutatennamen zu achten: kg, g, EL, TL
+	- Es ist auf eine einheitliche Schreibweise der Einheiten und der Zutatennamen zu achten: kg, g, EL, TL, ml, L
 	- Standard-Zutaten, die typischerweise zu Hause vorhanden sind, werden aus der Zutatenliste ausgelassen. Dazu gehören ausschließlich Salz, Pfeffer, Wasser, Olivenöl. Falls durch das Weglassen einer Zutat eine Mengenangabe verloren geht, muss diese Mengenangabe im entsprechenden Zubereitungsschritt explizit erwähnt werden.
 - **Schritte**:
 	- Die Zubereitungsschritte werden nummeriert, wobei jeder Schritt mit einer Zahl und einem Punkt beginnt (z. B. „1. Den Tofu und die Paprikas in kleine Würfel schneiden.“).
