@@ -8,9 +8,7 @@
 - 1 Dose Mais
 - 100 g Tomatenmark
 - 2 EL Sambal Oelek
-
 - Fladenbrot
-
 - 5 g Kreuzkümmel
 - 5 g Oregano
 - 3 g Paprikapulver edelsüß
