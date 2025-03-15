@@ -1,6 +1,6 @@
 
 - Ernährungseinschränkung: vegan
-- Personen: _Anzahl der Portionen_
+- Portionen: 4
 
 ### Zutaten
 
