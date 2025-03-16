@@ -1,0 +1,40 @@
+name: Update README with Recipes
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update README.md
+        run: |
+          echo "# Kochbuch" > README.md
+          echo "" >> README.md
+          for file in *.md; do
+            if [[ "$file" == "README.md" ]]; then
+              continue
+            fi
+            if [[ "$file" == .* ]] || [[ "$file" == \$* ]]; then
+              continue
+            fi
+            title="${file%.md}"
+            echo "- ($title)[$file]" >> README.md
+          done
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add README.md
+          if git diff-index --quiet HEAD; then
+            echo "No changes detected."
+          else
+            git commit -m "Update README.md with recipes"
+            git push
+          fi
