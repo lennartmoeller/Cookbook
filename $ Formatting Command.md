@@ -56,6 +56,4 @@ Regeln zum Formatieren von Rezepten:
 	- Zeit- und Temperatureinstellungen (z. B. „für 5 Minuten“, „2 Stunden köcheln“) werden klar und einheitlich angegeben.
 	- Alle Rezepte werden in derselben Sprache und im gleichen sachlichen, neutralen Stil verfasst.
 
-Ich möchte Rezepte für ein Kochbuch einheitlich verfassen. Bitte wende die Regeln und auf das Rezept an.
-
-Bitte passe das Rezept, das du bekommst, so an, dass es den Regeln entspricht. Achte darauf, den Inhalt des Rezepts nicht zu verändern. Bitte gebe mir nur das bearbeitete Rezept aus, nichts weiteres.
+Ich möchte Rezepte für ein Kochbuch einheitlich verfassen. Bitte passe das Rezept so an, das es den oben genannten Regeln entspricht.  Achte darauf, den Inhalt des Rezepts nicht zu verändern. Bitte gebe mir nur das bearbeitete Rezept aus, nichts weiteres.
