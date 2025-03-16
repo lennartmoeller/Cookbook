@@ -27,14 +27,12 @@ jobs:
             echo "- ($title)[$file]" >> README.md
           done
 
-      - name: Commit and push changes
-        run: |
-          git remote set-url origin ${{ secrets.ssh }}
-          git add README.md
-          if git diff-index --quiet HEAD; then
-            echo "No changes detected."
-          else
-            git commit -m "Update README.md with recipes"
-            git fetch origin master
-            git push origin HEAD:master
-          fi
+      - name: Setup Node
+        uses: actions/setup-node@v4
+
+      - name: Update resources
+        uses: test-room-7/action-update-file@v1
+        with:
+          file-path: README.md
+          commit-msg: Update README.md with recipes
+          github-token: ${{ secrets.GITHUB_TOKEN }}
