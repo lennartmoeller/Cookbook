@@ -21,6 +21,9 @@
 	- Alle Schritte folgen einem konsistenten Satzmuster, sodass der Ablauf gut nachvollziehbar ist.
 	- Zeit- und Temperatureinstellungen (z. B. „für 5 Minuten“, „2 Stunden köcheln“) werden klar und einheitlich angegeben.
 	- Alle Rezepte werden in derselben Sprache und im gleichen sachlichen, neutralen Stil verfasst.
+	- Jeder Zubereitungsschritt enthält nur eine logisch abgeschlossene Aufgabe.
+	- Kombinationen mehrerer Aufgaben in einem Schritt sind nur zulässig, wenn sie einen natürlichen, zusammenhängenden Arbeitsablauf bilden und nicht zu einer überladenen Anweisung führen.
+	- Aufgaben, die inhaltlich getrennt bearbeitet werden, sind in separate, klar abgegrenzte Schritte zu gliedern, um eine übersichtliche und nachvollziehbare Anleitung zu gewährleisten.
 
 ---
 
