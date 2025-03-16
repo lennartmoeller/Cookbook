@@ -24,7 +24,7 @@ jobs:
               continue
             fi
             title="${file%.md}"
-            echo "- ($title)[$file]" >> README.md
+            echo "- [$title]($file)" >> README.md
           done
 
       - name: Commit and push changes
