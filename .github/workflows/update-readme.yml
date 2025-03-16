@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update README.md
         run: |
@@ -30,17 +28,13 @@ jobs:
           done
 
       - name: Commit and push changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git remote set-url origin ${{ secrets.ssh }}
           git add README.md
           if git diff-index --quiet HEAD; then
             echo "No changes detected."
           else
             git commit -m "Update README.md with recipes"
-            # Update remote URL to include the token for authentication
-            git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
-            git push origin HEAD:${{ github.ref }}
+            git fetch origin master
+            git push origin HEAD:master
           fi
