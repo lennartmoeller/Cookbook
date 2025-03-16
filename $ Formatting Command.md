@@ -4,7 +4,7 @@
 	- Das Rezept hat den Rezeptnamen als Titel, aber nicht mehr (z.B. Chili con Tofu). Der Titel soll eine Markdown-H1-Überschrift sein.
 	- Nach dem Titel kommt eine Auflistung der Eckdaten des Rezepts als Stichpunkte, ohne Überschrift:
 		- Ernährungseinschränkung: {omnivore, pescetarisch, vegetarisch, vegan}
-		- Personen: *Anzahl der Portionen einsetzen*
+		- Portionen: *Anzahl der Portionen einsetzen*
 	- Die Zutaten werden mit einer Markdown-H3-Überschrift "Zutaten" eingeleitet.
 	- Die Zubereitungsschritte werden mit einer Markdown-H3-Überschrift "Zubereitungsschritte" eingeleitet.
 - **Zutaten**:
