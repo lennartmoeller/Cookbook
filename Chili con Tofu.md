@@ -1,3 +1,4 @@
+# Chili con Tofu
 
 - Ernährungseinschränkung: vegan
 - Portionen: 4

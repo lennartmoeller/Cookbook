@@ -1,3 +1,4 @@
+# $ Formatting Command
 ## Regeln zum Formatieren von Rezepten
 
 - **Struktur**:

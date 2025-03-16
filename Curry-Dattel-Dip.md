@@ -1,3 +1,4 @@
+# Curry-Dattel-Dip
 
 - Ernährungseinschränkung: vegetarisch
 - Portionen: 4
