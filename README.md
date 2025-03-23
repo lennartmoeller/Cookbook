@@ -1,8 +1,8 @@
 # Kochbuch
 
-- [Asiatische Chilinudeln](<Asiatische Chilinudeln.md>)
-- [Chili con Tofu](<Chili con Tofu.md>)
-- [Curry-Dattel-Dip](<Curry-Dattel-Dip.md>)
-- [Italienischer Nudelsalat](<Italienischer Nudelsalat.md>)
-- [Türkische Linsensuppe](<Türkische Linsensuppe.md>)
-- [Veganes Hummus](<Veganes Hummus.md>)
+- [Rezepte/Asiatische Chilinudeln](<Rezepte/Asiatische Chilinudeln.md>)
+- [Rezepte/Chili con Tofu](<Rezepte/Chili con Tofu.md>)
+- [Rezepte/Curry-Dattel-Dip](<Rezepte/Curry-Dattel-Dip.md>)
+- [Rezepte/Italienischer Nudelsalat](<Rezepte/Italienischer Nudelsalat.md>)
+- [Rezepte/Türkische Linsensuppe](<Rezepte/Türkische Linsensuppe.md>)
+- [Rezepte/Veganes Hummus](<Rezepte/Veganes Hummus.md>)
