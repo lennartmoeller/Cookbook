@@ -2,17 +2,18 @@
 
 ## Beilagen
 
-- [Italienischer Nudelsalat](Rezepte/Beilagen/Italienischer Nudelsalat.md)
+- [Italienischer Nudelsalat](<Rezepte/Beilagen/Italienischer Nudelsalat.md>)
 
 ## Dips
 
-- [Curry-Dattel-Dip](Rezepte/Dips/Curry-Dattel-Dip.md)
-- [Veganes Hummus](Rezepte/Dips/Veganes Hummus.md)
+- [Curry-Dattel-Dip](<Rezepte/Dips/Curry-Dattel-Dip.md>)
+- [Veganes Hummus](<Rezepte/Dips/Veganes Hummus.md>)
+- [Veganes](<Rezepte/Dips/Veganes.md>)
 
 ## Hauptgerichte
 
-- [Asiatische Chilinudeln](Rezepte/Hauptgerichte/Asiatische Chilinudeln.md)
-- [Burger](Rezepte/Hauptgerichte/Burger.md)
-- [Chili con Tofu](Rezepte/Hauptgerichte/Chili con Tofu.md)
-- [Türkische Linsensuppe](Rezepte/Hauptgerichte/Türkische Linsensuppe.md)
+- [Asiatische Chilinudeln](<Rezepte/Hauptgerichte/Asiatische Chilinudeln.md>)
+- [Burger](<Rezepte/Hauptgerichte/Burger.md>)
+- [Chili con Tofu](<Rezepte/Hauptgerichte/Chili con Tofu.md>)
+- [Türkische Linsensuppe](<Rezepte/Hauptgerichte/Türkische Linsensuppe.md>)
 
