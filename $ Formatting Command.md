@@ -4,6 +4,7 @@
 - **Struktur**:
 	- Das Rezept hat den Rezeptnamen als Titel, aber nicht mehr (z.B. Chili con Tofu). Der Titel soll eine Markdown-H1-Überschrift sein.
 	- Nach dem Titel kommt eine Auflistung der Eckdaten des Rezepts als Stichpunkte, ohne Überschrift:
+		- Kategorie: {Frühstück, Hauptgericht, Dip}
 		- Ernährungseinschränkung: {omnivore, pescetarisch, vegetarisch, vegan}
 		- Portionen: *Anzahl der Portionen einsetzen*
 	- Die Zutaten werden mit einer Markdown-H3-Überschrift "Zutaten" eingeleitet.

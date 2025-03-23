@@ -16,13 +16,7 @@ jobs:
         run: |
           echo "# Kochbuch" > README.md
           echo "" >> README.md
-          for file in *.md; do
-            if [[ "$file" == "README.md" ]]; then
-              continue
-            fi
-            if [[ "$file" == .* ]] || [[ "$file" == \$* ]]; then
-              continue
-            fi
+          for file in Rezepte/*.md; do
             title="${file%.md}"
             echo "- [$title](<$file>)" >> README.md
           done
