@@ -16,7 +16,3 @@
 - [Chili con Tofu](Rezepte/Hauptgerichte/Chili con Tofu.md)
 - [Türkische Linsensuppe](Rezepte/Hauptgerichte/Türkische Linsensuppe.md)
 
-## Rezeptschritte
-
-- [Zwiebeln karamellisieren](Rezepte/Rezeptschritte/Zwiebeln karamellisieren.md)
-
