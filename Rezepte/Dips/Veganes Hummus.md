@@ -6,10 +6,10 @@
 ### Zutaten
 
 - 1 Dose Kichererbsen (Abtropfgewicht 265 g)
-- 2 Knoblauchzehen
 - 1 Zitrone
-- ½ TL Kreuzkümmel, gemahlen
+- 2 Knoblauchzehen
 - 120 g Tahin
+- ½ TL Kreuzkümmel
 
 ### Zubereitungsschritte
 
@@ -20,6 +20,6 @@
 5. Saft der Zitrone, Knoblauchzehen und ½ TL Salz in den Mixer geben und glatt mixen.
 6. Tahin in den Mixer hinzufügen und gründlich mixen.
 7. Wasser aus dem Gefäß langsam in den laufenden Mixer zugießen, bis eine helle, fluffige Masse entsteht.
-8. Kichererbsen und ½ TL Kreuzkümmel hinzufügen und mindestens 3 Minuten mixen, bis eine cremige, zarte Masse entsteht.
+8. Kichererbsen und ½ TL Kreuzkümmel in den Mixer geben und mindestens 3 Minuten mixen, bis eine cremige, zarte Masse entsteht.
 9. Mit Salz und Zitronensaft abschmecken.
 10. Bei zu dicker Konsistenz kaltes Wasser untermixen.

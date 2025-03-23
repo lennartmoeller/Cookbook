@@ -26,7 +26,7 @@
 3. 2 Liter Wasser aufkochen.
 4. Geschnittenes Gemüse, gewaschene Linsen, gehäufte Gemüsebrühe, Paprikapulver, Salz und Pfeffer hinzufügen.
 5. Mit geschlossenem Deckel bei kleiner Hitze 30 Minuten köcheln lassen und gelegentlich umrühren; bei zu dicker Konsistenz vorsichtig zusätzliches Wasser nach Bedarf zugeben.
-6. Butter in einer Pfanne bei mittlerer Hitze schmelzen.
+6. Vegane Butter in einer Pfanne bei mittlerer Hitze schmelzen.
 7. Tomatenmark, Nana-Minze sowie Basilikum oder Petersilie unter ständigem Rühren 2–3 Minuten anrösten.
 8. Geröstete Mischung zur Suppe geben und nochmals 5–10 Minuten kochen.
 9. Mit dem Stabmixer glatt rühren.

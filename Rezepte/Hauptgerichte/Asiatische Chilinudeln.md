@@ -5,7 +5,7 @@
 
 ### Zutaten
 
-- Sesam
+- nach Bedarf Sesam
 - 2 Frühlingszwiebeln
 - 2 Zehen Knoblauch
 - 1 kleines Stück Ingwer
@@ -16,7 +16,7 @@
 - 2 EL Sojasoße
 - 120 ml Kokosmilch
 - 2 EL Süß-Sauer-Soße
-- Chiliflocken
+- nach Bedarf Chiliflocken
 
 ### Zubereitungsschritte
 
@@ -31,6 +31,8 @@
 9. Weißen Teil der Frühlingszwiebeln, Knoblauch und Ingwer 1–2 Minuten andünsten.
 10. Paprika und Champignons hinzufügen und ca. 5 Minuten anbraten.
 11. Gekochte Chilinudeln unterheben und weiter anbraten.
-12. Sojasoße, Kokosmilch und Süß-Sauer-Soße in einer Schüssel vermengen und in die Pfanne einrühren.
-13. Mit Salz, Pfeffer und Chiliflocken abschmecken und kurz köcheln lassen.
-14. Chilinudeln mit grünem Teil der Frühlingszwiebeln und geröstetem Sesam anrichten.
+12. Sojasoße, Kokosmilch und Süß-Sauer-Soße in einer Schüssel vermengen.
+13. Mischung in die Pfanne einrühren.
+14. Mit 1 Prise Salz, 1 Prise Pfeffer und nach Bedarf Chiliflocken abschmecken.
+15. Mischung kurz köcheln lassen.
+16. Chilinudeln mit grünem Teil der Frühlingszwiebeln und geröstetem Sesam anrichten.
