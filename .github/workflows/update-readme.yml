@@ -17,7 +17,7 @@ jobs:
           echo "# Kochbuch" > README.md
           echo "" >> README.md
           for dir in Rezepte/*/; do
-            if [[ "$(basename "$dir")" == "Teilrezepte" ]]; then
+            if [[ "$(basename "$dir")" == "Rezeptschritte" ]]; then
               continue
             fi
             if ls "$dir"*.md 1> /dev/null 2>&1; then
