@@ -25,7 +25,7 @@ jobs:
               echo "" >> README.md
               for file in "$dir"*.md; do
                 title="$(basename "${file%.md}")"
-                echo "- [$title]($file)" >> README.md
+                echo "- [$title](<$file>)" >> README.md
               done
               echo "" >> README.md
             fi
