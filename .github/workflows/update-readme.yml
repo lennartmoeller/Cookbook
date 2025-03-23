@@ -16,9 +16,16 @@ jobs:
         run: |
           echo "# Kochbuch" > README.md
           echo "" >> README.md
-          for file in Rezepte/*.md; do
-            title="${file%.md}"
-            echo "- [$title](<$file>)" >> README.md
+          for dir in Rezepte/*/; do
+            if ls "$dir"*.md 1> /dev/null 2>&1; then
+              echo "## $(basename "$dir")" >> README.md
+              echo "" >> README.md
+              for file in "$dir"*.md; do
+                title="$(basename "${file%.md}")"
+                echo "- [$title]($file)" >> README.md
+              done
+              echo "" >> README.md
+            fi
           done
 
       - name: Commit and push changes
