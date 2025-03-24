@@ -7,8 +7,7 @@
 ## Dips
 
 - [Curry-Dattel-Dip](<Rezepte/Dips/Curry-Dattel-Dip.md>)
-- [Hummus](<Hummus.md>)
-- [Veganes](<Rezepte/Dips/Veganes.md>)
+- [Hummus](<Rezepte/Dips/Hummus.md>)
 
 ## Hauptgerichte
 
