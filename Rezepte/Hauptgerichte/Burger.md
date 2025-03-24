@@ -16,7 +16,7 @@
 
 ### Zubereitungsschritte
 
-1. [Zwiebeln karamellisieren](<../Rezeptschritte/Zwiebeln karamellisieren.md>)
+1. [Zwiebeln karamellisieren](<../Rezeptschritte/Zwiebeln karamellisieren.md>).
 2. Ofen auf 180 Grad erhitzen.
 3. Beyond Burger Patties im Kontaktgrill auf orangener Stufe 5 Minuten braten.
 4. Brioche Burger Buns im Ofen auf dem Rost 4 Minuten erhitzen.
