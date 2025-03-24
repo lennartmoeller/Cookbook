@@ -14,4 +14,4 @@
 ### Zubereitungsschritte
 
 1. Datteln und Knoblauch mit einem Schuss Wasser in einem Hochleistungsmixer auf höchster Stufe zerkleinern.
-2. Frischkäse, Schmand und Curry sowie 0,5 TL Salz und gemahlenen Pfeffer nach Bedarf in den Mixer geben und verrühren.
+2. Frischkäse, Schmand und Curry sowie 0,5 TL Salz und gemahlenen Pfeffer nach Bedarf in den Mixer geben und verrühren.å

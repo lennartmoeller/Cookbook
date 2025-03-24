@@ -1,4 +1,4 @@
-# Veganes Hummus
+# Hummus
 
 - Ernährungseinschränkung: vegan
 - Portionen: 4
