@@ -12,24 +12,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Update README.md
+      - name: Run Python Scripts
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          echo "# Kochbuch" > README.md
-          echo "" >> README.md
-          for dir in Rezepte/*/; do
-            if [[ "$(basename "$dir")" == "Rezeptschritte" ]]; then
-              continue
-            fi
-            if ls "$dir"*.md 1> /dev/null 2>&1; then
-              echo "## $(basename "$dir")" >> README.md
-              echo "" >> README.md
-              for file in "$dir"*.md; do
-                title="$(basename "${file%.md}")"
-                echo "- [$title](<$file>)" >> README.md
-              done
-              echo "" >> README.md
-            fi
-          done
+          python3 -m venv venv
+          source venv/bin/activate
+          pip install -r scripts/requirements.txt
+          python3 scripts/collect_recipes.py
+          python3 scripts/add_emojis.py
+          python3 scripts/generate_readme.py
 
       - name: Commit and push changes
         env:
@@ -38,7 +30,8 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add README.md
+          get add recipes.json
           if [[ -n "$(git status --porcelain)" ]]; then
-            git commit -m "Update README.md"
+            git commit -m "Update README.md and recipes.json"
             git push origin main
           fi
