@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Italienischer Nudelsalat",
+    "category": "Beilagen",
+    "emoji": "🍝🥗"
+  },
+  {
+    "name": "Zwiebeln karamellisieren",
+    "category": "Rezeptschritte",
+    "emoji": "🧅🔥"
+  },
+  {
+    "name": "Mie-Nudel-Pfanne mit Tofu",
+    "category": "Hauptgerichte",
+    "emoji": "🍜🍱"
+  },
+  {
+    "name": "Chili con Tofu",
+    "category": "Hauptgerichte",
+    "emoji": "🌶️🍲"
+  },
+  {
+    "name": "Burger",
+    "category": "Hauptgerichte",
+    "emoji": "🍔"
+  },
+  {
+    "name": "Türkische Linsensuppe",
+    "category": "Hauptgerichte",
+    "emoji": "🍲🥣"
+  },
+  {
+    "name": "Asiatische Chilinudeln",
+    "category": "Hauptgerichte",
+    "emoji": "🍜🌶️"
+  },
+  {
+    "name": "Curry-Dattel-Dip",
+    "category": "Dips",
+    "emoji": "🍛🌴"
+  },
+  {
+    "name": "Hummus",
+    "category": "Dips",
+    "emoji": "🥙🍽️"
+  }
+]
