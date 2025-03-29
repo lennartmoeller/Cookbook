@@ -20,12 +20,12 @@
 
 ### Zubereitungsschritte
 
-1. Sesam in einer Pfanne anrösten.
+1. Sesam in einer Pfanne anrösten und beiseite stellen.
 2. Weißen und grünen Teil der Frühlingszwiebeln getrennt in Ringe schneiden.
 3. Knoblauch und Ingwer fein hacken.
 4. Paprika in Würfel schneiden.
 5. Champignons klein schneiden.
-6. Chilinudeln nach Packungsanweisung kochen und Nudelwasser auffangen.
+6. Chilinudeln nach Packungsanweisung kochen. Nudelwasser auffangen.
 7. Gekochte Chilinudeln abgießen und beiseite stellen.
 8. Sesamöl in einer Pfanne erhitzen.
 9. Weißen Teil der Frühlingszwiebeln, Knoblauch und Ingwer 1–2 Minuten andünsten.

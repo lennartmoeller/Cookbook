@@ -29,13 +29,13 @@
 1. Räuchertofu sowie rote und orangene Paprika in kleine Würfel schneiden.
 2. Zwiebeln in kleine Würfel schneiden.
 3. Knoblauch pressen.
-4. 2 EL Olivenöl in einem großen Topf erhitzen und Zwiebeln glasig dünsten.
-5. Knoblauch hinzufügen und 2 Minuten mit anbraten.
-6. Räuchertofu hinzufügen und 5 Minuten mit anbraten.
-7. Paprikawürfel hinzufügen und 5 Minuten mit anbraten.
+4. 2 EL Olivenöl in einem großen Topf erhitzen und Zwiebeln glasig dünsten.
+5. Knoblauch hinzufügen und 2 Minuten mit anbraten.
+6. Räuchertofu hinzufügen und 5 Minuten mit anbraten.
+7. Paprikawürfel hinzufügen und 5 Minuten mit anbraten.
 8. Tomatenmark und Sambal Oelek hinzufügen und kurz mit anbraten.
 9. Kreuzkümmel, Oregano, Paprikapulver edelsüß, Paprikapulver geräuchert, Koriander, Zimt und Backkakao hinzufügen und kurz mit anbraten.
-10. Gehackte Tomaten, Kidneybohnen, Mais sowie 1 L heißes Wasser hinzufügen.
-11. Alles 2 Stunden köcheln lassen und regelmäßig umrühren.
+10. Gehackte Tomaten, Kidneybohnen, Mais sowie 1 L heißes Wasser hinzufügen.
+11. Alles 2 Stunden köcheln lassen und regelmäßig umrühren.
 12. Mit Salz, Pfeffer, zusätzlichem Sambal Oelek und Gewürzen abschmecken.
 13. Chili con Tofu mit Fladenbrot servieren.

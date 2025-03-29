@@ -1,11 +1,11 @@
 import os
 import json
-import openai
+from openai import OpenAI
 from pydantic import BaseModel
 from typing import List, Dict, Tuple
 from helpers import collect_recipes, load_json, update_recipes, save_json
 
-openai.api_key = os.environ["OPENAI_API_KEY"]
+OpenAI.api_key = os.environ["OPENAI_API_KEY"]
 
 class EmojiMapping(BaseModel):
     name: str
@@ -23,13 +23,14 @@ def get_emojis(recipes: List[Dict[str, str]]) -> Dict[Tuple[str, str], str]:
         "each object having 'name', 'category', and 'emoji' keys, where 'emoji' is a string concatenating the necessary emojis without spaces. "
         "Only output the JSON without any additional text.\n\nList of recipes:\n" + json.dumps(recipes)
     )
-    completion = openai.beta.chat.completions.parse(
+    client = OpenAI()
+    response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}],
         response_format=EmojiResponse,
     )
-    response = completion.choices[0].message.parsed
-    return {(m.name, m.category): m.emoji for m in response.recipes}
+    message = response.choices[0].message.parsed
+    return {(m.name, m.category): m.emoji for m in message.recipes}
 
 def main() -> None:
     fs_recipes = collect_recipes("recipes")

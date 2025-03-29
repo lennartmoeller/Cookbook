@@ -1,7 +1,7 @@
 # Türkische Linsensuppe
 
 - Ernährungseinschränkung: vegan
-- Portionen: TODO
+- Portionen: 4
 
 ### Zutaten
 
@@ -24,11 +24,13 @@
 1. Rote Linsen mehrfach mit kaltem Wasser waschen.
 2. Kartoffel, Karotte, Zwiebeln und Knoblauch schälen, putzen und klein schneiden.
 3. 2 Liter Wasser aufkochen.
-4. Geschnittenes Gemüse, gewaschene Linsen, gehäufte Gemüsebrühe, Paprikapulver, Salz und Pfeffer hinzufügen.
-5. Mit geschlossenem Deckel bei kleiner Hitze 30 Minuten köcheln lassen und gelegentlich umrühren; bei zu dicker Konsistenz vorsichtig zusätzliches Wasser nach Bedarf zugeben.
-6. Vegane Butter in einer Pfanne bei mittlerer Hitze schmelzen.
-7. Tomatenmark, Nana-Minze sowie Basilikum oder Petersilie unter ständigem Rühren 2–3 Minuten anrösten.
-8. Geröstete Mischung zur Suppe geben und nochmals 5–10 Minuten kochen.
-9. Mit dem Stabmixer glatt rühren.
-10. Mit Salz und Pfeffer abschmecken.
-11. Türkische Linsensuppe mit Fladenbrot servieren.
+4. Geschnittenes Gemüse, gewaschene Linsen, gehäufte Gemüsebrühe, edelsüßes Paprikapulver und rosenscharfes Paprikapulver hinzufügen.
+5. Mit Salz und Pfeffer würzen.
+6. Bei kleiner Hitze mit geschlossenem Deckel 30 Minuten köcheln lassen und gelegentlich umrühren.
+7. Bei zu dicker Konsistenz vorsichtig zusätzliches Wasser nach Bedarf zugeben.
+8. Vegane Butter in einer Pfanne bei mittlerer Hitze schmelzen.
+9. Tomatenmark, Nana-Minze sowie Basilikum oder Petersilie unter ständigem Rühren 2–3 Minuten anrösten.
+10. Geröstete Mischung zur Suppe geben und nochmals 5–10 Minuten kochen.
+11. Mit dem Stabmixer glatt rühren.
+12. Suppe mit Salz und Pfeffer abschmecken.
+13. Türkische Linsensuppe mit Fladenbrot servieren.

@@ -1,5 +1,11 @@
-# $ Formatting Command
-## Regeln zum Formatieren von Rezepten
+import os
+from openai import OpenAI
+from helpers import load_json, save_json
+
+OpenAI.api_key = os.environ["OPENAI_API_KEY"]
+
+FORMAT_PROMPT = """
+Regeln zum Formatieren von Rezepten:
 
 - **Struktur**:
 	- Das Rezept hat den Rezeptnamen als Titel, aber nicht mehr (z.B. Chili con Tofu). Der Titel soll eine Markdown-H1-Überschrift sein.
@@ -26,12 +32,42 @@
 	- Kombinationen mehrerer Aufgaben in einem Schritt sind nur zulässig, wenn sie einen natürlichen, zusammenhängenden Arbeitsablauf bilden und nicht zu einer überladenen Anweisung führen.
 	- Aufgaben, die inhaltlich getrennt bearbeitet werden, sind in separate, klar abgegrenzte Schritte zu gliedern, um eine übersichtliche und nachvollziehbare Anleitung zu gewährleisten.
 
----
-
-## Rezept
-
-*TODO: Insert recipe here*
-
----
-
 Ich möchte Rezepte für ein Kochbuch einheitlich verfassen. Bitte passe das Rezept so an, das es den oben genannten Regeln entspricht.  Achte darauf, den Inhalt des Rezepts nicht zu verändern. Bitte gebe mir nur das bearbeitete Rezept aus, nichts weiteres.
+"""
+
+def get_recipe_path(recipe):
+    if recipe.get("category"):
+        return os.path.join("recipes", recipe["category"], recipe["name"] + ".md")
+    return os.path.join("recipes", recipe["name"] + ".md")
+
+def format_recipe(content):
+    prompt = FORMAT_PROMPT + "\n\n" + content
+    client = OpenAI()
+    response = client.chat.completions.create(
+        model="gpt-4o",
+        messages=[{"role": "user", "content": prompt}],
+    )
+    return response.choices[0].message.content.strip()
+
+def main():
+    recipes = load_json("recipes.json")
+    updated = False
+    for recipe in recipes:
+        if not recipe.get("formatted"):
+            path = get_recipe_path(recipe)
+            if os.path.exists(path):
+                with open(path, "r", encoding="utf-8") as f:
+                    content = f.read()
+                formatted = format_recipe(content)
+                with open(path, "w", encoding="utf-8") as f:
+                    f.write(formatted)
+                recipe["formatted"] = True
+                updated = True
+                print(f"Formatted recipe: {recipe['name']}")
+    if updated:
+        save_json(recipes, "recipes.json")
+    else:
+        print("All recipes are already formatted.")
+
+if __name__ == "__main__":
+    main()

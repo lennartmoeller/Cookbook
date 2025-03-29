@@ -7,7 +7,7 @@
 
 - 500 g Nudeln
 - 200 g Tomaten, getrocknet
-- 100 g Oliven schwarz
+- 100 g Oliven, schwarz
 - 250 g Schafskäse
 - 3 EL Tomatenmark
 - 5 EL Sherryessig
@@ -15,9 +15,10 @@
 
 ### Zubereitungsschritte
 
-1. Nudeln bissfest kochen, abschrecken und in eine große Schüssel geben.
-2. Tomaten und Oliven in kleine Stücke schneiden und zu den Nudeln geben.
-3. Schafskäse zerbröseln und zu den Nudeln geben.
-4. In einer kleinen Schüssel Tomatenmark, Sherryessig, gepressten Knoblauch, 5 EL Wasser, 100 ml Olivenöl, Salz und Pfeffer miteinander vermischen.
-5. Inhalt der kleinen Schüssel über die Nudeln geben und gut vermischen.
-6. Nudelsalat 1 Stunde ziehen lassen.
+1. Nudeln bissfest kochen, mit Wasser abschrecken und in eine große Schüssel geben.
+2. Tomaten und Oliven in kleine Stücke schneiden.
+3. Geschnittene Tomaten und Oliven zu den Nudeln geben.
+4. Schafskäse zerbröseln und zu den Nudeln geben.
+5. Tomatenmark, Sherryessig, gepressten Knoblauch, 5 EL Wasser und 100 ml Olivenöl in einer kleinen Schüssel vermischen. Mit Salz und Pfeffer abschmecken.
+6. Inhalt der kleinen Schüssel über die Nudeln gießen und gut vermengen.
+7. Nudelsalat 1 Stunde ziehen lassen.

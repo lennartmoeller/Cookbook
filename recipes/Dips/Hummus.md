@@ -13,8 +13,8 @@
 
 ### Zubereitungsschritte
 
-1. 100 ml Wasser in ein Gefäß füllen.
-2. Kichererbsen durch ein Sieb gießen und das Wasser auffangen.
+1. Kichererbsen durch ein Sieb gießen und das Wasser auffangen.
+2. 100 ml Wasser in ein Gefäß füllen.
 3. 50 ml des aufgefangenen Kichererbsenwassers zum Wasser im Gefäß geben.
 4. Gefäß mit dem Wasser in den Kühlschrank stellen und abkühlen lassen.
 5. Saft der Zitrone, Knoblauchzehen und ½ TL Salz in den Mixer geben und glatt mixen.

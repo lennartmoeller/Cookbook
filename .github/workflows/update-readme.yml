@@ -18,6 +18,7 @@ jobs:
         run: |
           pip install -r scripts/requirements.txt
           python3 scripts/collect_recipes.py
+          python3 scripts/format_recipes.py
           python3 scripts/add_emojis.py
           python3 scripts/generate_readme.py
 
