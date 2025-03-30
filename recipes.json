@@ -52,11 +52,5 @@
     "category": "Dips",
     "emoji": "🥙🍽️",
     "formatted": true
-  },
-  {
-    "name": "Bowl",
-    "category": "Hauptgerichte",
-    "formatted": false,
-    "emoji": "🍲"
   }
 ]
