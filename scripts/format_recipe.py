@@ -38,7 +38,7 @@ Ich möchte Rezepte für ein Kochbuch einheitlich verfassen. Bitte passe das Rez
 def format_recipe(content):
     prompt = FORMAT_PROMPT + "\n\n" + content
     client = OpenAI()
-    response = client.chat.completions.create(
+    response = client.beta.chat.completions.parse(
         model="gpt-4o",
         messages=[{"role": "user", "content": prompt}],
     )

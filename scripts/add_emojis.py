@@ -24,7 +24,7 @@ def get_emojis(recipes: List[Dict[str, str]]) -> Dict[Tuple[str, str], str]:
         "Only output the JSON without any additional text.\n\nList of recipes:\n" + json.dumps(recipes)
     )
     client = OpenAI()
-    response = client.chat.completions.create(
+    response = client.beta.chat.completions.parse(
         model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}],
         response_format=EmojiResponse,
