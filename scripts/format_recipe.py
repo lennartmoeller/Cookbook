@@ -1,6 +1,6 @@
 import os
+import sys
 from openai import OpenAI
-from helpers import load_json, save_json
 
 OpenAI.api_key = os.environ["OPENAI_API_KEY"]
 
@@ -35,11 +35,6 @@ Regeln zum Formatieren von Rezepten:
 Ich möchte Rezepte für ein Kochbuch einheitlich verfassen. Bitte passe das Rezept so an, das es den oben genannten Regeln entspricht.  Achte darauf, den Inhalt des Rezepts nicht zu verändern. Bitte gebe mir nur das bearbeitete Rezept aus, nichts weiteres.
 """
 
-def get_recipe_path(recipe):
-    if recipe.get("category"):
-        return os.path.join("recipes", recipe["category"], recipe["name"] + ".md")
-    return os.path.join("recipes", recipe["name"] + ".md")
-
 def format_recipe(content):
     prompt = FORMAT_PROMPT + "\n\n" + content
     client = OpenAI()
@@ -50,24 +45,27 @@ def format_recipe(content):
     return response.choices[0].message.content.strip()
 
 def main():
-    recipes = load_json("recipes.json")
-    updated = False
-    for recipe in recipes:
-        if not recipe.get("formatted"):
-            path = get_recipe_path(recipe)
-            if os.path.exists(path):
-                with open(path, "r", encoding="utf-8") as f:
-                    content = f.read()
-                formatted = format_recipe(content)
-                with open(path, "w", encoding="utf-8") as f:
-                    f.write(formatted)
-                recipe["formatted"] = True
-                updated = True
-                print(f"Formatted recipe: {recipe['name']}")
-    if updated:
-        save_json(recipes, "recipes.json")
-    else:
-        print("All recipes are already formatted.")
+    if len(sys.argv) != 2:
+        print("Usage: python3 format_recipe.py path/to/recipe.md")
+        sys.exit(1)
+
+    recipe_path = sys.argv[1]
+    if not os.path.exists(recipe_path):
+        print(f"File not found: {recipe_path}")
+        sys.exit(1)
+
+    with open(recipe_path, "r", encoding="utf-8") as file:
+        content = file.read()
+
+    formatted = format_recipe(content)
+
+    base, ext = os.path.splitext(recipe_path)
+    formatted_path = f"{base}.formatted{ext}"
+    
+    with open(formatted_path, "w", encoding="utf-8") as file:
+        file.write(formatted)
+
+    print(f"Formatted recipe saved to: {formatted_path}")
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,38 @@
+name: Deploy Frontend
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - frontend/**
+      - recipes.json
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H $WEBSPACE_HOST >> ~/.ssh/known_hosts
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          WEBSPACE_HOST: ${{ secrets.WEBSPACE_HOST }}
+
+      - name: Install rsync
+        run: |
+          sudo apt-get update && sudo apt-get install -y rsync
+
+      - name: Deploy files using rsync
+        run: |
+          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./recipes $WEBSPACE_USERNAME@$WEBSPACE_HOST:/xxx
+        env:
+          WEBSPACE_HOST: ${{ secrets.WEBSPACE_HOST }}
+          WEBSPACE_USERNAME: ${{ secrets.WEBSPACE_USERNAME }}

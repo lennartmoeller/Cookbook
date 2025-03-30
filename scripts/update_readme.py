@@ -3,7 +3,7 @@ import json
 from collections import defaultdict
 from typing import List, Dict
 
-def generate_readme(recipes: List[Dict[str, str]]) -> str:
+def update_readme(recipes: List[Dict[str, str]]) -> str:
     groups = defaultdict(list)
     for r in recipes:
         if r.get("category") == "Rezeptschritte":
@@ -26,10 +26,10 @@ def generate_readme(recipes: List[Dict[str, str]]) -> str:
 def main() -> None:
     with open("recipes.json", "r", encoding="utf-8") as f:
         recipes = json.load(f)
-    readme = generate_readme(recipes)
+    readme = update_readme(recipes)
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme)
-    print("README.md generated.")
+    print("README.md updated.")
 
 if __name__ == "__main__":
     main()

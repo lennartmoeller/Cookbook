@@ -1,11 +1,11 @@
-name: Update README.md
+name: Update recipes.json
 
 on:
   push:
     branches:
       - main
     paths:
-      - recipes.json
+      - recipes/**
   workflow_dispatch:
 
 jobs:
@@ -20,7 +20,8 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           pip install -r scripts/requirements.txt
-          python3 scripts/generate_readme.py
+          python3 scripts/collect_recipes.py
+          python3 scripts/add_emojis.py
 
       - name: Commit and push changes
         env:
@@ -29,8 +30,8 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git fetch origin main
-          git add README.md
+          git add recipes.json
           if [[ -n "$(git status --porcelain)" ]]; then
-            git commit -m "Update README.md"
+            git commit -m "Update recipes.json"
             git push origin main
           fi
