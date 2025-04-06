@@ -58,5 +58,11 @@
     "category": "Hauptgerichte",
     "formatted": true,
     "emoji": "🥣"
+  },
+  {
+    "name": "Bananenbrot",
+    "category": "Kuchen",
+    "formatted": false,
+    "emoji": "🍌🍞"
   }
 ]
