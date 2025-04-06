@@ -56,7 +56,7 @@
   {
     "name": "Bowl",
     "category": "Hauptgerichte",
-    "formatted": false,
+    "formatted": true,
     "emoji": "🥣"
   }
 ]
