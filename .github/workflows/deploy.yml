@@ -37,7 +37,8 @@ jobs:
 
       - name: Deploy files using rsync
         run: |
-          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./recipes $WEBSPACE_USERNAME@$WEBSPACE_HOST:/xxx
+          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./recipes $WEBSPACE_USERNAME@$WEBSPACE_HOST:$WEBSPACE_ROOT/cookbook
         env:
           WEBSPACE_HOST: ${{ secrets.WEBSPACE_HOST }}
           WEBSPACE_USERNAME: ${{ secrets.WEBSPACE_USERNAME }}
+          WEBSPACE_ROOT: ${{ secrets.WEBSPACE_ROOT }}

@@ -22,6 +22,7 @@ jobs:
 
       - name: Check For Unformatted Recipes
         run: |
+          pip install -r scripts/requirements.txt
           UNFORMATTED_RECIPES=$(jq -c '.[] | select(.formatted == false)' recipes.json)
           while IFS= read -r recipe; do
             RECIPE_CATEGORY=$(echo "$recipe" | jq -r '.category')

@@ -1,4 +1,3 @@
-import os
 import json
 from collections import defaultdict
 from typing import List, Dict

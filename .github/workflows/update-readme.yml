@@ -25,7 +25,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           pip install -r scripts/requirements.txt
-          python3 scripts/generate_readme.py
+          python3 scripts/update_readme.py
 
       - name: Commit and push changes
         env:
