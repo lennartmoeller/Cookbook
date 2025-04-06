@@ -14,13 +14,15 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-readme:
+  format-recipes:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Check For Unformatted Recipes
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           pip install -r scripts/requirements.txt
           UNFORMATTED_RECIPES=$(jq -c '.[] | select(.formatted == false)' recipes.json)

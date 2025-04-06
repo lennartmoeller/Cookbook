@@ -6,7 +6,7 @@ def collect_recipes(directory: str) -> List[Dict[str, str]]:
     recipes = []
     for root, _, files in os.walk(directory):
         for file in files:
-            if file.lower().endswith(".md"):
+            if file.lower().endswith(".md") and not file.lower().endswith(".formatted.md"):
                 rel = os.path.relpath(root, directory)
                 category = "" if rel == "." else rel.split(os.sep)[0]
                 name, _ = os.path.splitext(file)

@@ -21,4 +21,3 @@
 ### Zubereitungsschritte
 
 TODO
-TODO
