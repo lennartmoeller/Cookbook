@@ -1,4 +1,4 @@
-name: Deploy Frontend
+name: deploy-frontend
 
 on:
   push:
@@ -7,6 +7,11 @@ on:
     paths:
       - frontend/**
       - recipes.json
+  workflow_run:
+    workflows:
+      - "update-recipes-json"
+    types:
+      - completed
   workflow_dispatch:
 
 jobs:
