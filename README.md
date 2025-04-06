@@ -12,6 +12,7 @@
 ## Hauptgerichte
 
 - [Asiatische Chilinudeln 🍜🌶️](<recipes/Hauptgerichte/Asiatische Chilinudeln.md>)
+- [Bowl 🥣](<recipes/Hauptgerichte/Bowl.md>)
 - [Burger 🍔](<recipes/Hauptgerichte/Burger.md>)
 - [Chili con Tofu 🌶️🍲](<recipes/Hauptgerichte/Chili con Tofu.md>)
 - [Mie-Nudel-Pfanne mit Tofu 🍜🍱](<recipes/Hauptgerichte/Mie-Nudel-Pfanne mit Tofu.md>)
