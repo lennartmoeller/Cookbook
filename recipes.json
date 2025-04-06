@@ -62,7 +62,7 @@
   {
     "name": "Bananenbrot",
     "category": "Kuchen",
-    "formatted": false,
+    "formatted": true,
     "emoji": "🍌🍞"
   }
 ]
