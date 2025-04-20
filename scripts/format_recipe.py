@@ -18,6 +18,7 @@ Regeln zum Formatieren von Rezepten:
 	- Die Zutaten werden als Aufzählung dargestellt, wobei jede Zeile mit einem Bindestrich beginnt, gefolgt von Menge, Einheit und dem Namen der Zutat (z. B. „350 g Räuchertofu“).
 	- Die Zutaten werden in der Reihenfolge aufgelistet, in der sie in den Zubereitungsschritten verarbeitet werden. Falls das Originalrezept eine andere Reihenfolge vorgibt, ist diese zugunsten der klaren Ablaufbeschreibung anzupassen.
 	- Es ist auf eine einheitliche Schreibweise der Einheiten und der Zutatennamen zu achten: kg, g, EL, TL, ml, L
+	- Falls ein
 	- Standard-Zutaten, die typischerweise zu Hause vorhanden sind, werden aus der Zutatenliste ausgelassen. Dazu gehören ausschließlich Salz, Pfeffer, Wasser, Olivenöl. Falls durch das Weglassen einer Zutat eine Mengenangabe verloren geht, muss diese Mengenangabe im entsprechenden Zubereitungsschritt explizit erwähnt werden.
 - **Schritte**:
 	- Die Zubereitungsschritte werden nummeriert, wobei jeder Schritt mit einer Zahl und einem Punkt beginnt (z. B. „1. Den Tofu und die Paprikas in kleine Würfel schneiden.“).
@@ -32,7 +33,7 @@ Regeln zum Formatieren von Rezepten:
 	- Kombinationen mehrerer Aufgaben in einem Schritt sind nur zulässig, wenn sie einen natürlichen, zusammenhängenden Arbeitsablauf bilden und nicht zu einer überladenen Anweisung führen.
 	- Aufgaben, die inhaltlich getrennt bearbeitet werden, sind in separate, klar abgegrenzte Schritte zu gliedern, um eine übersichtliche und nachvollziehbare Anleitung zu gewährleisten.
 
-Ich möchte Rezepte für ein Kochbuch einheitlich verfassen. Bitte passe das Rezept so an, das es den oben genannten Regeln entspricht.  Achte darauf, den Inhalt des Rezepts nicht zu verändern. Bitte gebe mir nur das bearbeitete Rezept aus, nichts weiteres.
+Ich möchte Rezepte für ein Kochbuch einheitlich verfassen. Bitte passe das Rezept so an, das es den oben genannten Regeln entspricht. Achte darauf, den Inhalt des Rezepts nicht zu verändern. Bitte gebe mir nur das bearbeitete Rezept aus, nichts weiteres.
 """
 
 def format_recipe(content):
