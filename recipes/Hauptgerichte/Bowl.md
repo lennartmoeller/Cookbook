@@ -1,7 +1,7 @@
 # Bowl
 
 - Ernährungseinschränkung: vegan
-- Portionen: 2
+- Portionen: 3
 
 ### Zutaten
 
@@ -9,7 +9,7 @@
 - 2 Süßkartoffeln
 - 1 Avocado
 - 1/2 Gurke
-- 1/3 Tüte Edamame
+- 1/2 Tüte Edamame
 - Endori Veganes Beef Natur
 - Hand voll Erdnüsse
 - Bisschen Koreander
