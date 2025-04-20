@@ -1,6 +1,9 @@
 import os
 import sys
+from pathlib import Path
+
 from openai import OpenAI
+from openai.types.chat import ChatCompletionUserMessageParam
 
 OpenAI.api_key = os.environ["OPENAI_API_KEY"]
 
@@ -42,7 +45,7 @@ def format_recipe(content):
     client = OpenAI()
     response = client.beta.chat.completions.parse(
         model="gpt-4o",
-        messages=[{"role": "user", "content": prompt}],
+        messages=[ChatCompletionUserMessageParam(content=prompt, role="user")],
     )
     return response.choices[0].message.content.strip()
 
@@ -52,19 +55,20 @@ def main():
         sys.exit(1)
 
     recipe_path = sys.argv[1]
-    if not os.path.exists(recipe_path):
+    if not Path(recipe_path).exists():
         print(f"File not found: {recipe_path}")
         sys.exit(1)
 
-    with open(recipe_path, "r", encoding="utf-8") as file:
+    with Path(recipe_path).open(encoding="utf-8") as file:
         content = file.read()
 
     formatted = format_recipe(content)
 
-    base, ext = os.path.splitext(recipe_path)
+    base = Path(recipe_path).stem
+    ext = Path(recipe_path).suffix
     formatted_path = f"{base}.formatted{ext}"
-    
-    with open(formatted_path, "w", encoding="utf-8") as file:
+
+    with Path(formatted_path).open("w", encoding="utf-8") as file:
         file.write(formatted)
 
     print(f"Formatted recipe saved to: {formatted_path}")

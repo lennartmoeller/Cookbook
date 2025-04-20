@@ -1,9 +1,10 @@
-import os
 import json
+import os
+
+from helpers import collect_recipes, load_json, save_json, update_recipes
 from openai import OpenAI
+from openai.types.chat import ChatCompletionUserMessageParam
 from pydantic import BaseModel
-from typing import List, Dict, Tuple
-from helpers import collect_recipes, load_json, update_recipes, save_json
 
 OpenAI.api_key = os.environ["OPENAI_API_KEY"]
 
@@ -13,9 +14,9 @@ class EmojiMapping(BaseModel):
     emoji: str
 
 class EmojiResponse(BaseModel):
-    recipes: List[EmojiMapping]
+    recipes: list[EmojiMapping]
 
-def get_emojis(recipes: List[Dict[str, str]]) -> Dict[Tuple[str, str], str]:
+def get_emojis(recipes: list[dict[str, str]]) -> dict[tuple[str, str], str]:
     prompt = (
         "You will be given a list of recipes in JSON format. Each recipe has a 'name' and a 'category'. "
         "For each recipe, decide how many emojis (between 1 and 3) are necessary to represent the recipe without adding unnecessary ones. "
@@ -26,7 +27,7 @@ def get_emojis(recipes: List[Dict[str, str]]) -> Dict[Tuple[str, str], str]:
     client = OpenAI()
     response = client.beta.chat.completions.parse(
         model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}],
+        messages=[ChatCompletionUserMessageParam(content=prompt, role="user")],
         response_format=EmojiResponse,
     )
     message = response.choices[0].message.parsed

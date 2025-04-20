@@ -5,5 +5,4 @@
 .obsidian
 
 # Python
-__pycache__
-venv
+poetry.lock

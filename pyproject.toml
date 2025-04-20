@@ -1,19 +1,42 @@
+[project]
+name = "cookbook"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.13.3,<3.14"
+dependencies = [
+    "openai (>=1.75.0,<2.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.6"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
 [tool.ruff]
-select = ["ALL"]
 line-length = 200
+
+[tool.ruff.lint]
+select = ["ALL"]
 ignore = [
-    "ANN001",  # Missing type annotation for function argument
-    "ANN201",  # Missing return type annotation for public function
-    "ANN202",  # Missing return type annotation for private function `_construct_thread_context`
-    "ANN204",  # Missing return type annotation for special method `__init__`
-    "D100",    # Missing docstring in public module
-    "D101",    # Missing docstring in public class
-    "D102",    # Missing docstring in public method
-    "D103",    # Missing docstring in public function
-    "D107",    # Missing docstring in `__init__`
-    "E501",    # Line too long
-    "G004",    # Logging statement uses f-string
-    "S603",    # `subprocess` call: check for execution of untrusted input
-    "TD002",   # Missing author in TODO
-    "TD003",   # Missing issue link for this TODO
+    "ANN001", # Missing type annotation for function argument
+    "ANN201", # Missing return type annotation for public function
+    "ANN202", # Missing return type annotation for private function `_construct_thread_context`
+    "ANN204", # Missing return type annotation for special method `__init__`
+    "D100", # Missing docstring in public module
+    "D101", # Missing docstring in public class
+    "D102", # Missing docstring in public method
+    "D103", # Missing docstring in public function
+    "D107", # Missing docstring in `__init__`
+    "E501", # Line too long
+    "G004", # Logging statement uses f-string
+    "INP001", # File is part of an implicit namespace package. Add an `__init__.py`.
+    "S603", # `subprocess` call: check for execution of untrusted input
+    "T201", # `print` found
+    "TD002", # Missing author in TODO
+    "TD003", # Missing issue link for this TODO
 ]

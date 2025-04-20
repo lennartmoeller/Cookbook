@@ -1,4 +1,5 @@
-from helpers import collect_recipes, load_json, update_recipes, save_json
+from helpers import collect_recipes, load_json, save_json, update_recipes
+
 
 def main() -> None:
     fs_recipes = collect_recipes("recipes")
