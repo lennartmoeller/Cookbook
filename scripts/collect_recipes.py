@@ -1,4 +1,7 @@
-from helpers import collect_recipes, load_json, save_json, update_recipes
+from helpers.collect_recipes import collect_recipes
+from helpers.load_json import load_json
+from helpers.save_json import save_json
+from helpers.update_recipes import update_recipes
 
 
 def main() -> None:
