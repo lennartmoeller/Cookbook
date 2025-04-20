@@ -9,8 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Python & Poetry deps
+      - name: Setup Python Environment
         uses: ./.github/actions/setup-python-env
 
       - name: Run tests
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: poetry run python3 scripts/test_workflow.py
