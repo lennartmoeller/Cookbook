@@ -12,7 +12,7 @@ runs:
       shell: bash
       run: |
         curl -sSL https://install.python-poetry.org | python3 -
-        echo "::add-path::$HOME/.local/bin"
+        echo "$HOME/.local/bin" >> $GITHUB_PATH
 
     - name: Cache Poetry & Pip
       uses: actions/cache@v4
