@@ -1,4 +1,4 @@
-name: 'Setup Python Environment'
+name: setup-python-env
 
 runs:
   using: composite

@@ -20,33 +20,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Python Environment
+        uses: ./.github/actions/setup-python-env
+
       - name: Check For Unformatted Recipes
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          pip install -r scripts/requirements.txt
           UNFORMATTED_RECIPES=$(jq -c '.[] | select(.formatted == false)' recipes.json)
           while IFS= read -r recipe; do
             RECIPE_CATEGORY=$(echo "$recipe" | jq -r '.category')
             RECIPE_NAME=$(echo "$recipe" | jq -r '.name')
             RECIPE_PATH="recipes/${RECIPE_CATEGORY}/${RECIPE_NAME}.md"
-            python3 scripts/format_recipe.py "$RECIPE_PATH"
+            poetry run python3 scripts/format_recipe.py "$RECIPE_PATH"
           done <<< "$UNFORMATTED_RECIPES"
           jq '(.[] | select(.formatted == false) | .formatted) = true' recipes.json > tmp.json && mv tmp.json recipes.json
 
       - name: Commit and push changes
+        uses: ./.github/actions/commit-and-push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git stash push
-          git fetch origin main
-          git rebase origin/main
-          git stash pop
-          git add recipes/**/*
-          git add recipes.json
-          if [[ -n "$(git status --porcelain)" ]]; then
-            git commit -m "Add formatted recipe versions"
-            git push origin main
-          fi
+        with:
+          files: "recipes/**/* recipes.json"
+          message: "Add formatted recipe versions"

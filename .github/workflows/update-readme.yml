@@ -20,25 +20,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run Python Scripts
+      - name: Setup Python Environment
+        uses: ./.github/actions/setup-python-env
+
+      - name: Update README.md
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          pip install -r scripts/requirements.txt
-          python3 scripts/update_readme.py
+          poetry run python3 scripts/update_readme.py
 
       - name: Commit and push changes
+        uses: ./.github/actions/commit-and-push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git stash push
-          git fetch origin main
-          git rebase origin/main
-          git stash pop
-          git add README.md
-          if [[ -n "$(git status --porcelain)" ]]; then
-            git commit -m "Update README.md"
-            git push origin main
-          fi
+        with:
+          files: "README.md"
+          message: "Update README.md"
