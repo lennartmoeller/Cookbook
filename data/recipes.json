@@ -53,5 +53,10 @@
     "name": "Bananenbrot",
     "category": "Kuchen",
     "emoji": "🍌🍞"
+  },
+  {
+    "name": "README",
+    "category": "",
+    "emoji": ""
   }
 ]
