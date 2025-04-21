@@ -4,8 +4,9 @@ import os
 from openai import OpenAI
 from openai.types.chat import ChatCompletionUserMessageParam
 from pydantic import BaseModel
-from util.collect_recipes import collect_recipes
+
 from util.constants import RECIPES_DIR, RECIPES_JSON
+from util.index_recipes import index_recipes
 from util.load_json import load_json
 from util.save_json import save_json
 from util.update_recipes import update_recipes
@@ -38,7 +39,7 @@ def get_emojis(recipes: list[dict[str, str]]) -> dict[tuple[str, str], str]:
     return {(m.name, m.category): m.emoji for m in message.recipes}
 
 def main() -> None:
-    fs_recipes = collect_recipes(RECIPES_DIR)
+    fs_recipes = index_recipes(RECIPES_DIR)
     current = load_json(RECIPES_JSON)
     updated = update_recipes(fs_recipes, current)
     missing = [r for r in updated if not r.get("emoji")]

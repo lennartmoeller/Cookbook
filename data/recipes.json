@@ -2,67 +2,46 @@
   {
     "name": "Italienischer Nudelsalat",
     "category": "Beilagen",
-    "emoji": "🍝🥗",
-    "formatted": true
+    "emoji": "🍝🥗"
   },
   {
     "name": "Zwiebeln karamellisieren",
     "category": "Rezeptschritte",
-    "emoji": "🧅🔥",
-    "formatted": true
+    "emoji": "🧅🔥"
   },
   {
     "name": "Mie-Nudel-Pfanne mit Tofu",
     "category": "Hauptgerichte",
-    "emoji": "🍜🍱",
-    "formatted": true
+    "emoji": "🍜🍱"
   },
   {
     "name": "Chili con Tofu",
     "category": "Hauptgerichte",
-    "emoji": "🌶️🍲",
-    "formatted": true
+    "emoji": "🌶️🍲"
   },
   {
     "name": "Burger",
     "category": "Hauptgerichte",
-    "emoji": "🍔",
-    "formatted": true
+    "emoji": "🍔"
   },
   {
     "name": "Türkische Linsensuppe",
     "category": "Hauptgerichte",
-    "emoji": "🍲🥣",
-    "formatted": true
+    "emoji": "🍲🥣"
   },
   {
     "name": "Asiatische Chilinudeln",
     "category": "Hauptgerichte",
-    "emoji": "🍜🌶️",
-    "formatted": true
+    "emoji": "🍜🌶️"
   },
   {
     "name": "Curry-Dattel-Dip",
     "category": "Dips",
-    "emoji": "🍛🌴",
-    "formatted": true
+    "emoji": "🍛🌴"
   },
   {
     "name": "Hummus",
     "category": "Dips",
-    "emoji": "🥙🍽️",
-    "formatted": true
-  },
-  {
-    "name": "Bowl",
-    "category": "Hauptgerichte",
-    "formatted": true,
-    "emoji": "🥣"
-  },
-  {
-    "name": "Bananenbrot",
-    "category": "Kuchen",
-    "formatted": true,
-    "emoji": "🍌🍞"
+    "emoji": "🥙🍽️"
   }
 ]

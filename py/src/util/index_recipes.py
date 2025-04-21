@@ -1,9 +1,9 @@
 from pathlib import Path
 
-from get_markdown_files import get_markdown_files
+from util.get_markdown_files import get_markdown_files
 
 
-def collect_recipes(directory: str) -> list[dict[str, str]]:
+def index_recipes(directory: str) -> list[dict[str, str]]:
     recipes: list[dict[str, str]] = []
     for md_file in get_markdown_files(directory):
         rel_path = Path(md_file).relative_to(directory)
