@@ -53,5 +53,10 @@
     "name": "Basmatireis kochen",
     "category": "Rezeptschritte",
     "emoji": "🍚🥢"
+  },
+  {
+    "name": "Bowl",
+    "category": "Hauptgerichte",
+    "emoji": "🍲🍚"
   }
 ]
