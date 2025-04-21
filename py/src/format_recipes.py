@@ -1,9 +1,10 @@
 import os
-import sys
-from pathlib import Path
 
 from openai import OpenAI
 from openai.types.chat import ChatCompletionUserMessageParam
+
+from util.constants import RECIPES_DIR
+from util.get_markdown_files import get_markdown_files
 
 OpenAI.api_key = os.environ["OPENAI_API_KEY"]
 
@@ -49,29 +50,19 @@ def format_recipe(content):
     )
     return response.choices[0].message.content.strip()
 
-def main():
-    if len(sys.argv) != 2:
-        print("Usage: python3 format_recipe.py path/to/recipe.md")
-        sys.exit(1)
-
-    recipe_path = sys.argv[1]
-    if not Path(recipe_path).exists():
-        print(f"File not found: {recipe_path}")
-        sys.exit(1)
-
-    with Path(recipe_path).open(encoding="utf-8") as file:
-        content = file.read()
-
-    formatted = format_recipe(content)
-
-    base = Path(recipe_path).stem
-    ext = Path(recipe_path).suffix
-    formatted_path = f"{base}.formatted{ext}"
-
-    with Path(formatted_path).open("w", encoding="utf-8") as file:
-        file.write(formatted)
-
-    print(f"Formatted recipe saved to: {formatted_path}")
+def main() -> None:
+    draft_files = get_markdown_files(RECIPES_DIR, "draft")
+    formatted_files = get_markdown_files(RECIPES_DIR, "formatted")
+    for draft_file in draft_files:
+        formatted_file = draft_file.with_name(draft_file.name.replace(".draft.md", ".formatted.md", 1))
+        if formatted_file in formatted_files:
+            continue
+        with draft_file.open(encoding="utf-8") as file:
+            content = file.read()
+        formatted = format_recipe(content)
+        with formatted_file.open("w", encoding="utf-8") as file:
+            file.write(formatted)
+        print(f"Formatted recipe saved to: {formatted_file.name}")
 
 if __name__ == "__main__":
     main()

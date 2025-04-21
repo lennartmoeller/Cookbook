@@ -36,7 +36,6 @@ ignore = [
     "G004", # Logging statement uses f-string
     "INP001", # File is part of an implicit namespace package. Add an `__init__.py`.
     "S603", # `subprocess` call: check for execution of untrusted input
-    "T201", # `print` found
     "TD002", # Missing author in TODO
     "TD003", # Missing issue link for this TODO
 ]

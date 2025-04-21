@@ -1,13 +1,14 @@
 import json
 import os
 
-from helpers.collect_recipes import collect_recipes
-from helpers.load_json import load_json
-from helpers.save_json import save_json
-from helpers.update_recipes import update_recipes
 from openai import OpenAI
 from openai.types.chat import ChatCompletionUserMessageParam
 from pydantic import BaseModel
+from util.collect_recipes import collect_recipes
+from util.constants import RECIPES_DIR, RECIPES_JSON
+from util.load_json import load_json
+from util.save_json import save_json
+from util.update_recipes import update_recipes
 
 OpenAI.api_key = os.environ["OPENAI_API_KEY"]
 
@@ -37,8 +38,8 @@ def get_emojis(recipes: list[dict[str, str]]) -> dict[tuple[str, str], str]:
     return {(m.name, m.category): m.emoji for m in message.recipes}
 
 def main() -> None:
-    fs_recipes = collect_recipes("recipes")
-    current = load_json("recipes.json")
+    fs_recipes = collect_recipes(RECIPES_DIR)
+    current = load_json(RECIPES_JSON)
     updated = update_recipes(fs_recipes, current)
     missing = [r for r in updated if not r.get("emoji")]
     if missing:
@@ -47,7 +48,7 @@ def main() -> None:
             key = (r["name"], r["category"])
             if not r.get("emoji") and key in emojis:
                 r["emoji"] = emojis[key]
-    save_json(updated, "recipes.json")
+    save_json(updated, RECIPES_JSON)
     print("recipes.json updated with emojis.")
 
 if __name__ == "__main__":

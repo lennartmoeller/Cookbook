@@ -20,13 +20,13 @@ jobs:
 
       - name: Collect Recipes
         run: |
-          poetry run python3 scripts/collect_recipes.py
+          poetry run python3 py/src/collect_recipes.py
 
       - name: Add Emojis
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          poetry run python3 scripts/add_emojis.py
+          poetry run python3 py/src/add_emojis.py
 
       - name: Commit and push changes
         uses: ./.github/actions/commit-and-push

@@ -27,7 +27,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          poetry run python3 scripts/update_readme.py
+          poetry run python3 py/src/update_readme.py
 
       - name: Commit and push changes
         uses: ./.github/actions/commit-and-push

@@ -5,12 +5,7 @@ on:
     branches:
       - main
     paths:
-      - recipes.json
-  workflow_run:
-    workflows:
-      - "update-recipes-json"
-    types:
-      - completed
+      - 'recipes/**/*.draft.md'
   workflow_dispatch:
 
 jobs:
@@ -23,23 +18,16 @@ jobs:
       - name: Setup Python Environment
         uses: ./.github/actions/setup-python-env
 
-      - name: Check For Unformatted Recipes
+      - name: Create formatted recipe versions
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          UNFORMATTED_RECIPES=$(jq -c '.[] | select(.formatted == false)' recipes.json)
-          while IFS= read -r recipe; do
-            RECIPE_CATEGORY=$(echo "$recipe" | jq -r '.category')
-            RECIPE_NAME=$(echo "$recipe" | jq -r '.name')
-            RECIPE_PATH="recipes/${RECIPE_CATEGORY}/${RECIPE_NAME}.md"
-            poetry run python3 scripts/format_recipe.py "$RECIPE_PATH"
-          done <<< "$UNFORMATTED_RECIPES"
-          jq '(.[] | select(.formatted == false) | .formatted) = true' recipes.json > tmp.json && mv tmp.json recipes.json
+          poetry run python3 py/src/format_recipes.py
 
       - name: Commit and push changes
         uses: ./.github/actions/commit-and-push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: "recipes/**/* recipes.json"
+          files: "recipes/**/*.formatted.md"
           message: "Add formatted recipe versions"

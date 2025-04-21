@@ -2,6 +2,8 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
+from util.constants import README_MD, RECIPES_JSON
+
 
 def update_readme(recipes: list[dict[str, str]]) -> str:
     groups = defaultdict(list)
@@ -24,10 +26,10 @@ def update_readme(recipes: list[dict[str, str]]) -> str:
     return "\n".join(lines)
 
 def main() -> None:
-    with Path("recipes.json").open("r", encoding="utf-8") as f:
+    with Path(RECIPES_JSON).open("r", encoding="utf-8") as f:
         recipes = json.load(f)
     readme = update_readme(recipes)
-    with Path("README.md").open("w", encoding="utf-8") as f:
+    with Path(README_MD).open("w", encoding="utf-8") as f:
         f.write(readme)
     print("README.md updated.")
 
