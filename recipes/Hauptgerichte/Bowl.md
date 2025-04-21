@@ -6,11 +6,11 @@
 ### Zutaten
 
 - 1 Avocado
-- 1/2 Gurke (ca. 150 g)
-- 50 g Erdnüsse
-- Handvoll Koriander
+- 1/2 (ca. 150g) Gurke
+- Handvoll (ca. 50 g) Erdnüsse
+- Handvoll (ca. 10 g) Koriander
 - 1 Limette
-- 2 Süßkartoffeln (ca. 500 g)
+- 2 (ca. 500 g) Süßkartoffeln
 - 2 TL Paprika edelsüß
 - 180 g Endori Veganes Beef Natur
 - 250 g Edamame
