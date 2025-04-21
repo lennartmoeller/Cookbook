@@ -1,9 +1,5 @@
 # Kochbuch
 
-## Uncategorized
-
-- [README](<recipes/README.md>)
-
 ## Beilagen
 
 - [Italienischer Nudelsalat 🍝🥗](<recipes/Beilagen/Italienischer Nudelsalat.md>)
