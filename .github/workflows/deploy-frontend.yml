@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - frontend/**
-      - recipes.json
+      - data/recipes.json
   workflow_run:
     workflows:
       - "update-recipes-json"

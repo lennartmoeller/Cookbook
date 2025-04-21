@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - recipes.json
+      - data/recipes.json
   workflow_run:
     workflows:
       - "update-recipes-json"

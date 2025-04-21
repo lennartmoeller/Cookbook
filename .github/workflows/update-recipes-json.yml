@@ -35,5 +35,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: "recipes.json"
+          files: "data/recipes.json"
           message: "Update recipes.json"
