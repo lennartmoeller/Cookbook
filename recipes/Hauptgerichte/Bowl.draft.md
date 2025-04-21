@@ -1,33 +1,30 @@
 # Bowl.draft
 
-- Ernährungseinschränkung: vegan
+- Ernährungseinschränkung: vegetarisch
 - Portionen: 3
 
 ### Zutaten
 
 - 2 Süßkartoffeln (ca. 500 g)
-- 150 g Basmatireis
-- Endori Veganes Beef Natur (180 g)
+- 180 g Endori Veganes Beef Natur
 - 1 Avocado
 - 1/2 Gurke (ca. 150 g)
-- Hand voll Erdnüsse (ca. 50 g)
-- Bisschen Koreander
-- Sojasauce nach belieben
-- Limette
-- 250g Edamame
-- 2 Eier
+- 50 g Erdnüsse
+- Handvoll Koriander
+- 1 Limette
+- 250 g Edamame
+- 2 TL Paprika edelsüß
+- 2 EL Olivenöl
 
 ### Zubereitungsschritte
 
-1. Basmatireis kochen.
-2. Avocado halbieren, Kern herausnehmen, Fruchtfleisch mit Esslöffel herauslöffeln und in Streifen schneiden.
-3. Gurke würfeln.
-4. Erdnüsse hacken.
-5. Koreander hacken.
-6. Limette vierteln.
-7. Süßkartoffeln würfeln.
-8. Gewürfelte Süßkartoffeln in einer Schale mit 2 EL Öl, Salz und 2 TL Paprika edelsüß vermengen.
-9. Gewürfelte Süßkartoffeln im Airfryer 20 Minuten bei 195 Grad - 6 Minuten vor Ende das vegane Beef dazugeben.
-10. Edamame 6 Minuten lang kochen und anschließend schälen.
-11. Eier 7 Minuten lang kochen, schälen, längs halbieren.
-12. Alle Zutaten auf einem tiefen Teller anrichten, mit Sojasauce und Limetten servieren.
+1. Avocado halbieren, den Kern entfernen, das Fruchtfleisch mit einem Esslöffel herauslöffeln und in Streifen schneiden.
+2. Gurke in Würfel schneiden.
+3. Erdnüsse hacken.
+4. Koriander hacken.
+5. Limette vierteln.
+6. Süßkartoffeln schälen und in Würfel schneiden.
+7. Süßkartoffeln in einer Schale mit 2 EL Olivenöl, Salz und 2 TL Paprika edelsüß vermengen.
+8. Süßkartoffeln im Airfryer 20 Minuten bei 195 Grad garen, das vegane Beef 6 Minuten vor Ende der Garzeit hinzufügen.
+9. Edamame 6 Minuten lang kochen und anschließend schälen.
+10. Alle Zutaten auf tiefen Tellern anrichten, mit Sojasauce abschmecken und mit Limettenvierteln servieren.
