@@ -43,5 +43,15 @@
     "name": "Hummus",
     "category": "Dips",
     "emoji": "🥙🍽️"
+  },
+  {
+    "name": "Bowl",
+    "category": "Hauptgerichte",
+    "emoji": "🍚🍽️"
+  },
+  {
+    "name": "Bananenbrot",
+    "category": "Kuchen",
+    "emoji": "🍌🍞"
   }
 ]
