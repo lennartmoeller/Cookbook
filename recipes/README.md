@@ -20,4 +20,4 @@
 
 ## Kuchen
 
-- [Bananenbrot 🍌🍞](<recipes/Kuchen/Bananenbrot.md>)
+- [Bananenbrot 🍌🍞](<Kuchen/Bananenbrot.draft.md>)
