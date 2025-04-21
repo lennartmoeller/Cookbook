@@ -35,7 +35,7 @@ runs:
       shell: bash
       run: |
         git add ${{ inputs.files }}
-        if [[ -n "$(git status --porcelain)" ]]; then
+        if ! git diff --cached --quiet; then
           git commit -m "${{ inputs.message }}"
           git push origin main
         fi
