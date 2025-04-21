@@ -34,7 +34,7 @@ runs:
     - name: Commit and Push
       shell: bash
       run: |
-        git add ${{ inputs.files }}
+        git add ${{ inputs.files }} || true
         if ! git diff --cached --quiet; then
           git commit -m "${{ inputs.message }}"
           git push origin main
