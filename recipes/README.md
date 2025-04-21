@@ -17,3 +17,7 @@
 - [Chili con Tofu 🌶️🍲](<recipes/Hauptgerichte/Chili con Tofu.md>)
 - [Mie-Nudel-Pfanne mit Tofu 🍜🍱](<recipes/Hauptgerichte/Mie-Nudel-Pfanne mit Tofu.md>)
 - [Türkische Linsensuppe 🍲🥣](<recipes/Hauptgerichte/Türkische Linsensuppe.md>)
+
+## Kuchen
+
+- [Bananenbrot 🍌🍞](<recipes/Kuchen/Bananenbrot.md>)
