@@ -58,5 +58,10 @@
     "name": "Bowl",
     "category": "Hauptgerichte",
     "emoji": "🍲🍚"
+  },
+  {
+    "name": "Bananenbrot",
+    "category": "Kuchen",
+    "emoji": "🍌🍞"
   }
 ]
