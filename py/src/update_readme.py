@@ -13,7 +13,9 @@ def update_readme(recipes: list[dict[str, str]]) -> str:
         groups[r.get("category", "")].append(r)
     lines = ["# Kochbuch", ""]
     for cat in sorted(groups.keys()):
-        heading = f"## {cat}" if cat else "## Uncategorized"
+        if not cat:
+            continue
+        heading = f"## {cat}"
         lines.append(heading)
         lines.append("")
         for r in sorted(groups[cat], key=lambda x: x["name"]):
