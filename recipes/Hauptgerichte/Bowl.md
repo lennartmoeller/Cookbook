@@ -5,7 +5,6 @@
 
 ### Zutaten
 
-- 150 g Reis
 - 2 Süßkartoffeln (ca. 500 g)
 - 1 Avocado
 - 1/2 Gurke
@@ -20,4 +19,5 @@
 
 ### Zubereitungsschritte
 
-1. 
+1. [Basmatireis kochen](../Rezeptschritte/Basmatireis%20kochen.md)
+2. 

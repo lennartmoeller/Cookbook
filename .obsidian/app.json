@@ -1,3 +1,6 @@
 {
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "newLinkFormat": "relative",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true
 }
