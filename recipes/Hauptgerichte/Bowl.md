@@ -6,7 +6,7 @@
 ### Zutaten
 
 - 150 g Reis
-- 2 Süßkartoffeln
+- 2 Süßkartoffeln (ca. 500 g)
 - 1 Avocado
 - 1/2 Gurke
 - 1/2 Tüte Edamame
@@ -20,6 +20,4 @@
 
 ### Zubereitungsschritte
 
-TODO
-TODO
-TODO
+1. 
