@@ -1,7 +1,7 @@
-# Halloumi-Gnocchi‑Pfanne.formatted
+# Halloumi-Gnocchi‑Pfanne
 
 - Ernährungseinschränkung: vegetarisch
-- Portionen: 4
+- Portionen: 3
 
 ### Zutaten
 
