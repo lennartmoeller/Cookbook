@@ -1,19 +1,19 @@
-# Halloumi-Gnocchi-Pfanne
+# Halloumi-Gnocchi‑Pfanne.formatted
 
 - Ernährungseinschränkung: vegetarisch
-- Portionen: 2
+- Portionen: 4
 
 ### Zutaten
 
 - 30 g geröstete Pinienkerne
 - 500 g Gnocchi
-- 225 g Halloumi, in mundgerechte Würfel
+- 225 g Halloumi
 - 1 Aubergine
 - 1 rote Paprika
 - 50 g Babyspinat, gewaschen
 - 1 TL Paprikapulver edelsüß
 - ½ TL Chiliflocken
-- 40 g Basilikumblätter
+- 50 g Basilikumblätter
 - 1 Knoblauchzehe
 - 1 EL Zitronensaft
 
