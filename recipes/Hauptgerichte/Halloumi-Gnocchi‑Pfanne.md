@@ -1,4 +1,4 @@
-# Halloumi-Gnocchi‑Pfanne
+	# Halloumi-Gnocchi‑Pfanne
 
 - Ernährungseinschränkung: vegetarisch
 - Portionen: 3
